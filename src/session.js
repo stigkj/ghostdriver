@@ -188,7 +188,6 @@ ghostdriver.Session = function(desiredCapabilities) {
                 // If any JavaScript errors have occured, send them back to the caller
                 if (_caughtErrors.length) {
                     thisPage.resetOneShotCallbacks();
-
                     onErrorFunc.call(thisPage, JSON.stringify(_caughtErrors));
 
                     return;
